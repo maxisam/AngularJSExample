@@ -7,7 +7,7 @@
     <list id="504a7de3-5826-4b11-bc12-4d436a743cc3" name="Rejected commit: Default" comment="reformat code" />
     <ignored path="AngularJSExample.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2c2fcafa-70c3-4f77-a1c5-c96e0a7a7ced" time="1356815759256" ignored="false" />
+    <file path="/Dummy.txt" changelist="2c2fcafa-70c3-4f77-a1c5-c96e0a7a7ced" time="1356815833248" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +254,11 @@
       <created>1356815772799</created>
       <updated>1356815772799</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="webstorm setting change">
+      <created>1356815838928</created>
+      <updated>1356815838928</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="ngApp">
+<head lang="en">
+    <meta charset="utf-8">
+    <title>maxisam's ngApp</title>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.0/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+</head>
+
+<body ng-controller="MainCtrl">
+<form ng-submit="submit()" name="form">
+    <input type="checkbox" ng-model="partner" checked/>
+    Are you bringing along a partner?<br/>
+
+    Partner name:
+    <input type="text" ng-model="partnerName" ng-placeholder="{ 'required': partner }" ng-required="partner"/> <br/>
+
+    <input type="submit" value="save" ng-disabled="form.$invalid" class="btn"/>
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="ngApp">
+<head lang="en">
+    <meta charset="utf-8">
+    <title>maxisam's ngApp</title>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.0/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+</head>
+
+<body ng-controller="MainCtrl">
+<ul class="nav nav-pills">
+    <li ng-class="{'active': order=='name'}"><a href="#" ng-click="setOrder('name')">name</a></li>
+    <li ng-class="{'active': order=='phone'}"><a href="#" ng-click="setOrder('phone')">phone</a></li>
+</ul>
+<ul>
+    <li data-ng-repeat="friend in friends|orderBy:order">
+        <span class="name">{{friend.name}}</span>
+        <span class="phone">{{friend.phone}}</span>
+    </li>
+</ul>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,10 +1,10 @@
 var app = angular.module('ngApp', []);
-app.directive('ngPlaceholder', function ($parse) {
+app.directive('xngPlaceholder', function () {
     'use strict';
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {
-            scope.$watch(attrs.ngPlaceholder, function (newVal, oldVal, scope) {
+            scope.$watch(attrs.ngPlaceholder, function (newVal) {
                 element.removeAttr('placeholder');
                 var att = '';
                 angular.forEach(newVal, function (elm, key) {

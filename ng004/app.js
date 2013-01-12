@@ -1,7 +1,8 @@
 var app = angular.module('ngApp', [])
     .directive('xngFocus', function () {
-        return function (scope, element, attrs) {
-            scope.$watch(attrs.xngFocus,
+        "use strict";
+        return function (scope, element, iattrs) {
+            scope.$watch(iattrs.xngFocus,
                 function (newValue) {
                     newValue && element.focus();
                 }, true);

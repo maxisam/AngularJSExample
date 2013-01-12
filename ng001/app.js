@@ -1,5 +1,5 @@
 var app = angular.module('myApp', [])
-    .factory('CurrentUserService',function () {
+    .factory('CurrentUserService', function () {
         "use strict";
         var user = {
             avatarUrl: ''
@@ -9,7 +9,7 @@ var app = angular.module('myApp', [])
         };
 
         return srv;
-    }).directive('myAvatar', function (CurrentUserService) {
+    }).directive('myAvatar', function () {
         "use strict";
         return {
             restrict: 'A',

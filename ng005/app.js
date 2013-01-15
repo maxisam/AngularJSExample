@@ -6,11 +6,9 @@ var app = angular.module('ngApp', [])
             template: '<pre><code ng-transclude></code></pre>',
             replace: true,
             transclude: true,
-            link: function (scope, elm, attrs) {
+            link: function (scope, elm) {
                 var tmp = $interpolate(elm.find('code').text())(scope);
-                $timeout(function () {
-                    elm.find('code').html(hljs.highlightAuto(tmp).value);
-                }, 0);
+                elm.find('code').html(hljs.highlightAuto(tmp).value);
             }
         };
     }]);

@@ -4,7 +4,7 @@ app.directive('xngPlaceholder', function () {
     return {
         restrict: 'A',
         link: function (scope, iElement, iAttrs) {
-            scope.$watch(iAttrs.ngPlaceholder, function (newVal) {
+            scope.$watch(iAttrs.xngPlaceholder, function (newVal) {
                 iElement.removeAttr('placeholder'); // remove existing placeholder
                 var att = '';
                 angular.forEach(newVal, function (elm, key) {

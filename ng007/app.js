@@ -1,10 +1,16 @@
 var app = angular.module('ngApp', [])
     .directive('myComponent', function () {
+        "use strict";
         return {
             scope: {
                 isolatedAttributeFoo: '@attributeFoo',
                 isolatedBindingFoo: '=bindingFoo',
                 isolatedExpressionFoo: '&'
+            },
+            link: function (scope, iElement, iAttrs) {
+                scope.$parent.$watch(iAttrs.nonIsoAttribute, function (newVal, oldVal, scope) {
+                    scope.nonIsoAttribute = newVal;
+                }, false);
             }
         };
     });

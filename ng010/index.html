@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="ngApp">
+<head lang="en">
+    <meta charset="utf-8">
+    <title>maxisam's ngApp</title>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.0/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+</head>
+
+<body class="container">
+
+<div ng-controller="MainCtrl1">
+    <fieldset>
+        <legend> Controller 1</legend>
+        <div dataview></div>
+        <div sync></div>
+    </fieldset>
+</div>
+<div ng-controller="MainCtrl2">
+    <fieldset>
+        <legend> Controller 2</legend>
+        <div dataview></div>
+        <div sync></div>
+    </fieldset>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
